@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 my-4 mx-auto">
+                <select name="cboxPais" id="cboxPais" class="form-control text-center"></select>
+                <br>
+                <select name="cboxCiudad" id="cboxCiudad" class="form-control text-center"></select>
+                <br>
+                <h4 id="txtAlcalde" class="text-center"></h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+#contenedor-principal {
+    display: none;
+}
+
+.h1 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.h3 {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 12px;
+    color: violet;
+    font-style: oblique;
+}
