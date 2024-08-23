@@ -13,12 +13,10 @@ def home(request):
 def obtener_paises(request):
     paises = list(Pais.objects.values())
 
-    ciudades = list(Ciudad.objects.values())
-
     print("PAISES --> ", paises)
 
     if (len(paises) > 0):
-        data = {'mensaje':'Exito', 'paises':paises, 'ciudades':ciudades}
+        data = {'mensaje':'Exito', 'paises':paises}
 
     else:
         data = {'mensaje':'No se encontraron paises'}
@@ -26,6 +24,21 @@ def obtener_paises(request):
     print("data --> ", data)
 
     return JsonResponse(data, safe=False)
+
+
+
+def obtener_ciudades(request, pais_id):
+    ciudades = list(Ciudad.objects.filter(pais_id=pais_id).values())
+
+    if (len(ciudades) > 0):
+        data = {'mensaje':'Exito', 'ciudades':ciudades}
+
+    else:
+        data = {'mensaje':'No se encontraron ciudades'}
+
+    return JsonResponse(data, safe=False)
+
+
 
 
 
