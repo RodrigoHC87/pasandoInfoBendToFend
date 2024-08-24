@@ -40,6 +40,10 @@ def obtener_ciudades(request, pais_id):
 
 
 
+def cargar_dinamica(request):
+    paises = list(Pais.objects.values())
+    return render(request, 'plantillaDatos.html', {'paises':paises})
+
 
 
 #- Para conocer que esta devolviendo la funcion en consola.

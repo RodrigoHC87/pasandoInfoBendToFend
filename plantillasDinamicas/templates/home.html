@@ -20,17 +20,24 @@
             </a>
 
 
-            <a type="button" class="btn btn-primary" id="btnII" href="#">
-                boton 2
+            <button class="btn btn-primary" onclick="cargarPlantilla('./plantilaAux/')">
+                Cargar contenido
+            </button>
+
+
+            <button class="btn btn-primary" onclick="cargarPlantilla('./cargarDinamica/')">
+                Cargar cont-AUX
+            </button>
+
+            <a type="button" class="btn btn-primary" id="btnV" href="{% url 'home' %}">
+                home
             </a>
 
-            <a type="button" class="btn btn-primary" id="btnIII" href="#">
-                boton 3
+            <a type="button" class="btn btn-primary" id="btnIV" href="{% url 'index' %}">
+                Geografía
             </a>
 
-            <a type="button" class="btn btn-primary" id="btnIV" href="#">
-                boton 4
-            </a>
+
 
         </div>
 
@@ -39,7 +46,7 @@
 
         </div>
 
-        <script src="{% static 'js/prueba3_1.js' %}"></script>
+        <script src="{% static 'js/prueba4.js' %}"></script>
     </body>
 </html>
 
